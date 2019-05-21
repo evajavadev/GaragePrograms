@@ -1,0 +1,75 @@
+Den Glade Grannens Garage behöver ett nytt system för hantering av arbetsflödet.
+
+Garaget har plats för 72 fordon. 30 platser för bilar 12 platser för flygplan, 6 platser för tåg, 18 platser för båtar och 6 platser för u-båtar.
+
+ 
+
+När ett fordon parkeras får kunden ett kvitto där parkeringsplatsen står. Fordon hämtas ut genom att ange korrekt parkeringsplats.
+
+ 
+
+Kravspecifikation A:
+
+Applikationen ska ha följande funktionalitet på grundläggande nivå:
+
+·        parkera ett fordon i garaget
+
+·        söka efter ett fordon i garaget
+
+·        hämta ut ett fordon ur garaget
+
+·        visa samtliga fordon parkerade i garaget
+
+·        ett användargränssnitt i konsolfönstret
+
+ 
+
+Applikationen skall hantera felaktig inmatning.
+
+toString()-metoderna skall vara deklarerade.
+
+Använd hellre ArrayList än [] när ni löser uppgiften.
+
+Klasserna Vehicle, Car, Boat, Aeroplane, Train och Submarine skall finnas.
+
+Vehicle är superklass och de övriga ärver från Vehicle och har minst en egen egenskap.
+
+ 
+
+Implementera GarageInterface som skickas med uppgiften.
+
+ 
+
+Kravspecifikation B:
+
+Applikationen skall ha en klass UserInterface som tar hand om input och output i konsolen. Menyn för användargränssnittet och dess olika metoder såsom parkVehicle() eller printAllVehicles() skall inte deklareras i Main-klassen utan i UserInterface.
+
+ 
+
+Kravspecifikation C:
+
+Glade Grannens Garage vill ha ett likadant personalhanteringssystem som Rödbetor och Rädisor.
+
+Integrera PersonalRegister i Garage och i UserInterface. Applikationen kommer att ha minst två nivåer på menyn:
+
+Välkommen till Den Glade Grannens Garage!
+
+Vad vill du göra?
+
+  1: Öppna Garaget
+
+  2: Administrera personal
+
+             Q: Avsluta
+
+             1
+
+  1: Parkera ett fordon
+
+    2: Leta efter ett fordon
+
+  2: Hämta ett fordon
+
+  3: Visa alla fordon
+
+  Q: Avsluta
