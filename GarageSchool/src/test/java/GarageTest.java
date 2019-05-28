@@ -2,6 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+
 public class GarageTest {
 
     @Test
@@ -14,10 +15,7 @@ public class GarageTest {
         Vehicle testVehicle5 = new Car("QWE005");
 
         Vehicle testVehicle6 = new Bus("RTY412", 30);
-
         Vehicle testMotorbike1 = new Motorcycle("DSL007", "gasoline");
-
-
 
         testGarage.park(testVehicle6, testGarage.findParkingLot(Vehicle.BUS));
         testGarage.park(testVehicle1, testGarage.findParkingLot(Vehicle.CAR));
@@ -33,14 +31,12 @@ public class GarageTest {
 */
         testGarage.unpark("QWE003");
         testGarage.unpark("QWE004");
-
         /*
         assertSame( testVehicle1, testGarage.getVehicleByRegistrationNumber("QWE001"));
         assertSame(testMotorbike1, testGarage.getVehicleByRegistrationNumber("DSL007"));
         assertSame(testVehicle6, testGarage.getVehicleByRegistrationNumber("RTY412"));
         assertSame(testVehicle3, testGarage.getVehicleByRegistrationNumber("QWE003"));
         */
-
         System.out.println(testGarage);
     }
 
@@ -54,7 +50,6 @@ public class GarageTest {
         testGarage.park(testVehicle2, testGarage.findParkingLot(Vehicle.BUS));
 
         System.out.println(testGarage);
-
         testGarage.unpark(testVehicle2);
 
         assertSame(testVehicle1, testGarage.getVehicleByRegistrationNumber("QWE542"));
