@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 public abstract class Vehicle {
 
     protected String registrationNumber;
@@ -62,9 +63,9 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return  "registrationNumber='" + registrationNumber + '\'' +
-                ", color='" + color + '\'' +
-                ", numberOfWheels=" + numberOfWheels +
-                ", parkinglotNumber=" + parkinglotNumber;
+        return  "registration number = " + registrationNumber +
+                "\ncolor = " + color +
+                "\nnumber of wheels = " + numberOfWheels +
+                "\nparking lot number = " + parkinglotNumber;
     }
 }

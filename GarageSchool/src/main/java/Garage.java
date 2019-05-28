@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+
 public class Garage implements GarageInterface {
 
     //You have to set your own absolute path
@@ -11,7 +12,6 @@ public class Garage implements GarageInterface {
     private Map<Integer, Vehicle> vehicles = new HashMap<>(maxCapacity);
 
     public Garage() {
-
     }
 
     public void park(Vehicle vehicle, int parkingSlot) {
@@ -82,7 +82,7 @@ public class Garage implements GarageInterface {
             e.printStackTrace();
             System.out.println("Failed to write.");
         }
-    }//save
+    }
 
     public static Garage load() {
         Garage temp = null;
@@ -100,7 +100,7 @@ public class Garage implements GarageInterface {
             System.out.println("Impossible error");
         }
         return temp;
-    }//load
+    }
 
     public String toString(){
         String output = "";
@@ -108,8 +108,7 @@ public class Garage implements GarageInterface {
         for(Vehicle v : temp){
             output += v+"\n";
         }
-        output += "Max capacity: "+maxCapacity;
+        output += "Max capacity : " + maxCapacity;
         return output;
     }
-
 }

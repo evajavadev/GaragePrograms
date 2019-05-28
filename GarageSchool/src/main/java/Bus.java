@@ -34,6 +34,4 @@ public class Bus extends Vehicle{
         }
         return false;
     }
-
-
 }

@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 public interface GarageInterface {
 
     void park(Vehicle vehicle, int parkingSlot);

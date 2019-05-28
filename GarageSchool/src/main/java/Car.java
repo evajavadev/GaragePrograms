@@ -18,9 +18,7 @@ public class Car extends Vehicle{
     }
 
     public boolean park(Garage garage){
-        /*
-        go through the garage, when we find an empty slot, we park the vehicle there.
-         */
+        // Goes through the garage, and when find an empty slot the vehicle will be parked there.
         int emptySlot = garage.findParkingLot(Vehicle.CAR);
         if(emptySlot != -1){
             garage.park(this, emptySlot);
@@ -30,7 +28,6 @@ public class Car extends Vehicle{
     }
 
     public String toString(){
-        return super.toString()+'\''+", cc: "+cylinderVolume;
+        return super.toString() + ", cc: " + cylinderVolume;
     }
-
 }
